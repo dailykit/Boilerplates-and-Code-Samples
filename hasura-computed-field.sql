@@ -19,5 +19,17 @@ BEGIN
 
 -- Make sure to return of the type defined in the Returns at line 3
 END
-$function$
+$function$;
 -- Here ends the function
+
+-- Copy the function boilerplate without explanation from here
+
+CREATE OR REPLACE FUNCTION fn (v vt)
+ RETURNS type 
+ LANGUAGE plpgsql
+ STABLE
+AS $function$
+DECLARE
+BEGIN
+END
+$function$;
